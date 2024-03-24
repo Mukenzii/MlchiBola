@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+ <base href="https://benchmarkee.ru/">   
+<title>Бенчмарки</title>
+<meta name="description" content="Записи пользовательских сценариев в мобильных приложениях">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/templates/revision/img/fav.png">
+<link rel="stylesheet" type="text/css" href="/assets/templates/revision/css/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/assets/templates/revision/css/owl.carousel.min.css" />
+
+
+
+<link rel="canonical" href="https://benchmarkee.ru/"/>
+</head>
+<body>
+
+
+<div class="adv" style="background-color:#000000">
+</div>
+<header>
+<div class="main_menu">
+<div class="logo">
+<a href="/"><img src="C:\Users\CompingUz\Desktop\Попытка номер 3\logo.svg"></a>
+</div>
+<div class="logo_mobile">
+<a href="/"><img src="C:\Users\CompingUz\Desktop\Попытка номер 3\logo.svg"></a>
+</div>
+<!--
+<ul class="nav">
+<li><a href="/" class="nav-link">Mobile</a></li>
+<li><a href="/web/" class="nav-link">Web</a></li>
+</ul>
+-->
+
+<div class="contact_desktop">
+<a href="https://t.me/benchmarkee" target="_blank">Telegram</a>
+
+<!--
+<div class="search_desktop">
+<img src="/assets/templates/revision/img/search.svg">
+</div>
+-->
+</div>
+</div>
+</div>
+
+
+
+    </header>
+
+    <main>
+
+
+<div class="container">
+<div class="buttons-block">
+<button class="prev"><img src="/assets/templates/revision/img/left.svg"></button>
+<button class="next"><img src="/assets/templates/revision/img/right.svg"></button>
+</div>
+<div class="tabs">
+    {% for category in categories %}
+<div class="tab" data-id="266">{{ category.title }}</div>
+    {% endfor %}
+</div>
+
+<div id="content">
+    {% for article in articles %}
+    <div class="block">
+
+<div class="block_img">
+<a href="/mobile/finance/ozon-bank/"><img src="/assets/templates/revision/img/apps/ozonbank-cover.png" alt="OZON Банк"></a>
+<div class="block_info">
+<div class="block_info_img">
+<img src="{{ article.photo.url }}" alt="OZON Банк">
+</div>
+<div class="block_info_text" style="color: #000;">
+<p class="child_title">{{ article.title }}</p>
+    {% for category in categories %}
+<p class="parent_title">{{ category.title }}</p>
+    {% endfor %}
+</div> 
+</div>
+</div>
+
+
+
+</div>
+    {% endfor %}
+
+
+</div>
+</div>
+
+
+</main>
+    <footer>
+<div class="search_mobile">
+<img src="/assets/templates/revision/img/tag.svg">
+</div>
+<div class="search_inner">
+
+    <div class="close"><img src="/assets/templates/revision/img/cross.svg"></div>
+<div class="search_block">
+<!-- Поиск -->
+
+ <form class="sisea-search-form"  id="search">
+<fieldset class="myfieldset-searh">
+<input class="search-pol" name="search" placeholder="Введите запрос"  autocomplete="off" />
+</fieldset>
+</form>
+<div id="site-search-results" class="site-search-results"></div>
+</div>
+</div>
+        <p>Бенчмарки</p>
+    </footer>
+<script type="text/javascript" src="/assets/templates/revision/js/scripts.js"></script>
+<script src="/assets/templates/revision/js/simplesearh.js"></script>
+<script src="/assets/templates/revision/js/owl.carousel.min.js"></script>
+<div id="lightbox">
+  <div class="close"><img src="/assets/templates/revision/img/cross.svg"></div>
+  <img class="modal-content">
+  <div id="caption"></div>
+  <a class="prev">&#10094;</a>
+  <a class="next">&#10095;</a>
+</div>
+</body>
+</html>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
